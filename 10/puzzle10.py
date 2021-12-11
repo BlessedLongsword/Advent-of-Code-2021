@@ -4,7 +4,7 @@ Advent of Code 2021 - 02/12/2021
 """
 
 
-# Puzzle 8
+# Puzzle 10
 
 def syntax_error(file):
     lines = [line.strip() for line in open(file, 'r')]

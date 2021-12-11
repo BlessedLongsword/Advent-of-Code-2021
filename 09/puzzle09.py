@@ -4,7 +4,7 @@ Advent of Code 2021 - 02/12/2021
 """
 
 
-# Puzzle 8
+# Puzzle 9
 
 def riskLevels(file):
     heightmap = [list(map(int, list(line.strip()))) for line in open(file, 'r')]
