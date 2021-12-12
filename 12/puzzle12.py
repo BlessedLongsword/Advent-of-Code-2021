@@ -18,7 +18,6 @@ def count_paths(file, extra):
             connections_by_cave[connection[1]] = [connection[0]]
         else:
             connections_by_cave[connection[1]].append(connection[0])
-    paths = find_paths(connections_by_cave)
     if extra:
         paths = find_paths_extra(connections_by_cave)
     else:
