@@ -29,7 +29,7 @@ def find_paths(connections):
     paths = set()
     exploration = [('start', list(), set())]
     while exploration:
-        current_cave_data = exploration.pop(0)
+        current_cave_data = exploration.pop()
         cave, current_path, small_caves = current_cave_data[0], current_cave_data[1].copy(), current_cave_data[2].copy()
         current_path.append(cave)
         if cave == 'end':
@@ -48,7 +48,7 @@ def find_paths_extra(connections):
     paths = set()
     exploration = [('start', list(), set(), False)]
     while exploration:
-        current_cave_data = exploration.pop(0)
+        current_cave_data = exploration.pop()
         cave, current_path = current_cave_data[0], current_cave_data[1].copy()
         small_caves, small_cave_twice = current_cave_data[2].copy(), current_cave_data[3]
         small_caves_aux = small_caves.copy()
